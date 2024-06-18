@@ -10,6 +10,6 @@ jobs:
       - uses: actions/checkout@v4
       - uses: mas0061/junitxml-to-markdown@fix/bun-install-error
         with:
-          junitxml-path: './examples/*.xml'
+          junitxml-path: "./examples/*.xml"
         id: junitxml-to-markdown
       - run: cat ${{ steps.junitxml-to-markdown.outputs.markdown-path }}
