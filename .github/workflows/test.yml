@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: mas0061/junitxml-to-markdown@main
+      - uses: mas0061/junitxml-to-markdown@fix/bun-install-error
         with:
           junitxml-path: './examples/*.xml'
         id: junitxml-to-markdown
