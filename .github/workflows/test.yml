@@ -10,6 +10,6 @@ jobs:
       - uses: actions/checkout@v4
       - uses: mas0061/junitxml-to-markdown@main
         with:
-          junitxml-path: "${{ github.workspace }}/examples/**/*.xml"
+          junitxml-path: "./examples/**/*.xml"
         id: junitxml-to-markdown
       - run: cat ${{ steps.junitxml-to-markdown.outputs.markdown-path }}
